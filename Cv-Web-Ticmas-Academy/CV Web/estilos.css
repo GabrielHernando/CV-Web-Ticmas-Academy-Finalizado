@@ -543,7 +543,7 @@ progress {
     fill:var(--first-color);
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:720px) {
 .portfolio > .container {
     display:grid;
     grid-template-columns:repeat(2, 50%);
