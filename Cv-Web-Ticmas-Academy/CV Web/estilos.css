@@ -522,6 +522,20 @@ progress {
     fill:var(--first-color);
 }
 
+.contact-card > small {
+    margin-top: -1rem;
+}
+
+.social-media a {
+    padding: 0 0.4rem;
+    text-decoration: none;
+}
+
+.social-media svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .header {
     position:fixed;
     left:0;
