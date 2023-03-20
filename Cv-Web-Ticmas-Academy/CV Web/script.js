@@ -25,7 +25,7 @@
 
 ((d) => {
     const $form = d.querySelector(".contact-form"),
-    $loader = d.querySelector("contact-form-loader"),
+    $loader = d.querySelector(".contact-form-loader"),
     $response = d.querySelector(".contact-form-response");
 
     $form.addEventListener("submit", (e) => {
@@ -44,7 +44,7 @@
     .catch(err => {
         console.log(err);
         let message =
-        err.statusText || "Ocurrio un error al enviar, volve a intentarlo";
+        err.statusText || "Ocurrio un error al enviar, volve a intentarlo por favor";
         $response.querySelector(
         "h3"
         ).innerHTML = 'Error $(err.status): $(message)';
