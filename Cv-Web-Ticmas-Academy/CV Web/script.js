@@ -38,7 +38,6 @@
     .then((res) => (res.ok ? res.json() : promise.reject(res)))
     .Then((json) => {
     console.log(json);
-    $loader.classList.add("none");
     location.hash = "#gracias";
     $form.reset();
     })
@@ -47,13 +46,13 @@
         let message =
         err.statusText || "Ocurrio un error al enviar, volve a intentarlo";
         $response.querySelector(
-            "h3"
+        "h3"
         ).innerHTML = 'Error $(err.status): $(message)';
     })
     .finally(() => {
         $loader.classList.add("none");
         setTimeOut(() => {
-            location.hash = "#close";
+        location.hash = "#close";
         }, 3000);
     })
     }); 

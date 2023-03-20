@@ -526,6 +526,14 @@ progress {
     margin-top: -1rem;
 }
 
+.footer {
+    margin-bottom: var(--header-height);
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--third-color);
+}
+
 .social-media a {
     padding: 0 0.4rem;
     text-decoration: none;
@@ -693,6 +701,14 @@ progress {
     grid-template-columns:repeat(3,30%);
     justify-content:space-between;
     align-content:center;
+}
+
+.contact-cards {
+    grid-template-columns: repeat(4, 24%);
+}
+
+.footer {
+    margin-bottom: 0;
 }
 
 .header {
